@@ -23,7 +23,7 @@
 </script>
 
 <main>
-  {isTG}
+  <!-- {isTG} -->
   <div class="top-container">
     <ProfilePicture />
     <Menu />
