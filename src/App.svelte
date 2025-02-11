@@ -1,7 +1,4 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './components/Counter.svelte';
   import ProfilePicture from './components/ProfilePicture.svelte';
   import Menu from './components/Menu.svelte';
   import MainContent from './components/MainContent.svelte';
