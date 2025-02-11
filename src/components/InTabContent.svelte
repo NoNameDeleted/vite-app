@@ -1,22 +1,23 @@
-<script></script>
+<script>
+    let {content = ""} = $props()
+</script>
 
 <div>
     <p>
-        Ну что попался чертила! <br>
-        Я тут главная по пикселям, и ты вообще-то в моих владениях. <br>
-        Предлагаю подписаться!
-        *Летающая иконка хитро улыбается*
+        {content}
     </p>
 </div>
 
 <style>
     p {
-        font-size: small;
+        white-space: pre-line;
+        margin: 0%;
     }
 
     div {
         background-color: var(--element-color);
-        /* margin-top: 2%; */
-        height: 100px;
+        padding: 1% 2% 2%;
+        margin-top: 2%;
+        min-height: 20vh;
     }
 </style>

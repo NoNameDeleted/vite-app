@@ -3,9 +3,9 @@
 </script>
 
 <div>
-    <Button value={'Подбросить монетку ведьме'}/>
-    <Button value={'Подписаться'}/>
-    <Button value={'Уйти с территории Ликориса'}/>
+    <Button value={'Подбросить монетку ведьме'} onclick={() => {}}/>
+    <Button value={'Подписаться'} onclick={() => {}}/>
+    <Button value={'Уйти с территории Ликориса'} onclick={() => {}}/>
 </div>
 
 <style>

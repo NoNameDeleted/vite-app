@@ -1,18 +1,32 @@
 <script>
+// @ts-nocheck
+
   import Button from "./Button.svelte";
   import InTabContent from "./InTabContent.svelte";
 
+    let tabsContent = {
+        rinaChan: `Ну что попался чертила!
+        Я тут главная по пикселям, и ты вообще-то в моих владениях.
+        Предлагаю подписаться!
+        *Летающая иконка хитро улыбается*`,
+        auto: `тут будет автобиография? автомобили? автозаполнение?`,
+        prop: `тут будут прописи? пропсы? проповеди?`,
+        history: `тут будет история ликориса (наверное)`
+    }
+
+    let openedTab = $state('rinaChan')
 
 </script>
 
 <div class="container">
     <div class="tabs">
-        <Button value={'Рина-чан'}/>
-        <Button value={'Авто.'}/>
-        <Button value={'Проп.'}/>
-        <Button value={'История.'}/>
+        <Button value={'Рина-чан'} onclick={() => openedTab='rinaChan'}/>
+        <Button value={'Авто.'} onclick={() => openedTab='auto'}/>
+        <Button value={'Проп.'} onclick={() => openedTab='prop'}/>
+        <Button value={'История.'} onclick={() => openedTab='history'}/>
     </div>
-    <InTabContent />
+    
+    <InTabContent content={tabsContent[openedTab]}/>
 </div>
 
 

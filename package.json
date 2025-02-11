@@ -18,6 +18,8 @@
     "vite": "^6.1.0"
   },
   "dependencies": {
-    "@telegram-apps/sdk-svelte": "^2.0.8"
+    "@telegram-apps/bridge": "^2.3.2",
+    "@telegram-apps/sdk": "^3.3.2",
+    "@telegram-apps/sdk-svelte": "^2.0.9"
   }
 }

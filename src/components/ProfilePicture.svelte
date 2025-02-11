@@ -15,7 +15,7 @@
 
     img {
         width: 100%;
-        transform: scale(0.6);
+        transform: scale(0.5) translate(0px, 40px);
         image-rendering: pixelated;
     }
 </style>

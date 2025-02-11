@@ -1,14 +1,16 @@
 <script>
-    let { value = "подписаться"} = $props()
+    let { value = "подписаться", onclick} = $props()
 </script>
 
 <div>
-    <button>{value}</button>
+    <button onclick={onclick}>{value}</button>
     <!-- <input type="button" value={value}> -->
 </div>
 
 <style>
     button {
+        font-family: "Pixelify Sans", serif;
+        font-size: 3vw;
         width: 100%;
         height: 100%;
         background-color: var(--element-color);
